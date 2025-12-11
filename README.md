@@ -1,50 +1,41 @@
-# Welcome to your Expo app 👋
+Task Manager App - Assignment 5
+Student Name: Nithin Amin
+Student ID: A00194332
+Name: F2025 MAD201-01 Cross Platform Mobile Apps.
+Overview
+Task Manager App is a mobile application created on the foundation of the React Native and Expo. It enables one to add, view, update, complete, and delete tasks. Some of the essential ideas exhibited by the project include navigation, state management with the help of Context API, and the design of reusable components.
+Learning Objectives
+ Add multi screen navigation with Stack and Tab navigators.
+ State management and sharing with Context API.
+ Dynamic data management Use useState, useEffect.
+ Send and retrieve information between screens using navigation props.
+ Utilize acceptable project organization and design components.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Context API.
+The application employs an international task shop made on Context API. The tasks list is handled by the following functions:
+ addTask(title, description)
+ updateTask(id, updates)
+ removeTask(id)
+ toggleComplete(id)
+Navigation Flow
+In the app, the navigation is both using stack and tab:
+Stack Navigator:
+ Tasks (root)
+ AddTask
+ TaskDetails
+Tab Navigator:
+ All Tasks
+ Completed Tasks
+Screens
+ All Tasks Screen - shows all the tasks with Add button floating.
+ Completed tasks Screen - displays only completed tasks.
+ Add Task Screen - form to add or to edit tasks.
+ Task Detail Screen - see all the task details, complete, modify, or delete.
+Installation & Setup
+Run: npm install
+Install navigational packages:
+   npm install react-navigation/native.
+   npm install react-navigation/native-stack.
+   npm install react-navigation/bottom-tabs.
+   npx expo install react-native-screens react-native-safe-area-context.
+Start the project: npx expo start
